@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="side">
+			<div class="side_content">
+				<h2>ロゴ</h2>
+				<p>xxxxxx</p>
+				<p>xxxxxx</p>
+				<p>xxxxxx</p>
+				<p>xxxxxx</p>
+			</div>
+		</div>
+
+		<div class="main">
+            <h2 class="clear-margin-top">main</h2>
+
+            <!-- start for （スケジュールリストをforで回して表示する）-->
+
+            <!-- モーダルウィンドウを開く（HTMLリンク先は表示させたいエリアのid名を指定）-->
+            <p><button href="#umekomi" class="modal-open">予約</button></p>
+
+            <!-- start モーダルウィンドウ（最初は隠れている） -->
+            <section id="umekomi" style="display: none;">
+                <!-- 確認内容 -->
+                <h2>スケジュール情報</h2>
+                <p>レッスン名：「<埋め込み>」</p>
+                <p>日時：<埋め込み> <埋め込み>~<埋め込み></p>
+                <p>インストラクタ名：「<埋め込み>」</p>
+                <p>本当に予約してもよろしいですか？</p>
+                <!-- form（パラメータはhidenで隠れている） -->
+                <form action="kakutei" method="post">
+                    <input type="hidden" name="scheduleCode" value="<スケジュールコード>">
+                    <input type="submit" value="はい" id="orange-button"/>
+                    <button type="button" class="modal-close" id="orange-button">いいえ</button>
+                </form>
+            </section>
+            <!-- end モーダルウィンドウ -->
+
+            <!-- end for -->
+
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+            <p>xxxxxx</p>
+		</div>
+
+	</div>
+
+    <!-- jsの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!--自作のJS-->
+    <script src="index.js"></script>
+</body>
+</html>

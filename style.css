@@ -1,0 +1,47 @@
+/* sideの背景色のために，heightを100%にする */
+html, body{
+    height: 100%;
+}
+
+/* フルスクリーンで表示するためにmarginを消す */
+body{
+    margin: 0 0;
+}
+
+/* sideとmainを1:3に分割する */
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* 右側のmain */
+.main {
+    background: #e0efff;
+    height: 100%;
+}
+
+/* 左側のside */
+.side {
+    background: #e0ffe0;
+    height: 100%;
+}
+
+/* sideの中のコンテンツ */
+.side_content {
+    position: sticky;
+    top: 50px;
+    background: #ffe0ff;
+}
+
+/* デザインのためにmarginを消す */
+.clear-margin-top{
+    margin-top: 0px;
+}
+
+/* はいといいえのボタン（仮） */
+#orange-button{
+    width: 100px;
+    color: #fff;
+    background-color: #eb6100;
+    border-radius: 100vh;
+}
