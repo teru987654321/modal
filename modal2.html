@@ -28,12 +28,13 @@
                 <!-- form（パラメータはhidenで隠れている） -->
                 <form action="MemberFrontController" name="form1" method="post">
                     <input type="hidden" name="scheduleCode" value="<スケジュールコード>">
-                    <input type="submit" value="はい"/>
-                    <a href="">いいえ</a>
+                    <!-- <ｓinput type="submit" value="はい"/> -->
+                    <a href="javascript:form1.submit()">はい</a>
+                    <a href="#!">いいえ</a>
                 </form>
             </section>
           </div>
-          <a href="" class="modal-close">×</a>
+          <a href="#!" class="modal-close">×</a>
         </div>
       </div>
           
