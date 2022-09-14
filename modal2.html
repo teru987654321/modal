@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="modal2.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <a href="#modal-01">
+        <img src="https://picsum.photos/id/1080/140">
+      </a>
+      <div class="modal-wrapper" id="modal-01">
+        <a href="#!" class="modal-overlay"></a>
+        <div class="modal-window">
+          <div class="modal-content">
+            <!-- <img src="https://picsum.photos/id/1080/600" width="100%"> -->
+            <!-- start モーダルウィンドウ（最初は隠れている） -->
+            <section id="umekomi">
+                <!-- 確認内容 -->
+                <h2>スケジュール情報</h2>
+                <p>レッスン名：「<埋め込み>」</p>
+                <p>日時：<埋め込み> <埋め込み>~<埋め込み></p>
+                <p>インストラクタ名：「<埋め込み>」</p>
+                <p>本当に予約してもよろしいですか？</p>
+                <!-- form（パラメータはhidenで隠れている） -->
+                <form action="MemberFrontController" name="form1" method="post">
+                    <input type="hidden" name="scheduleCode" value="<スケジュールコード>">
+                    <input type="submit" value="はい"/>
+                    <a href="">いいえ</a>
+                </form>
+            </section>
+          </div>
+          <a href="" class="modal-close">×</a>
+        </div>
+      </div>
+          
+</body>
+</html>
